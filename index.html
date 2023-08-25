@@ -3,117 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swami Vivekananda- Tribute Page</title>
+    <title>Webpage including Form</title>
     <style>
-        /* styling the body element */
         body{
-            background-color: #00FA9A;
-        }
-
-        /* styling the image element */
-        #image{
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* styling the heading id */
-        #heading{
-            text-align:center;
-            margin-bottom: 30px;
-        }
-
-        /* styling the content id */
-        #content{
-            text-align: justify;
-            width: 600px;
-            height: 900px;
-            padding:30px;
-            margin-left: 340px;
-            background-color: rgb(46, 139, 87, 0.25);
-            box-shadow: 40px;
-            box-shadow: 20px 20px 20px #5e625e;
+            background-color: lightseagreen;
         }
     </style>
 </head>
 <body>
-    <div id="heading">
-        <h1>SWAMI VIVEKANANDA</h1>
-        <p style="font-size: 20px;">The Man who took India to the world</p>
-    </div>
-
-    <div id="image"><img src="Swami-Vivekananda-ili-96-img-1.jpg" width="300px" height="250px" alt="swami vivekananda" title="swami vivekananda"></div>
-
-    <div id="content">
-        <h2>ABOUT VIVEKANANDA IN BRIEF :</h2>
-        <ul type="square">
-            <li>Swami Vivekananda, (12 January 1863 – 4 July 1902),
-                 born Narendranath Datta, was an Indian Hindu monk, 
-                 philosopher, author, religious teacher, and the 
-                 chief disciple of the Indian mystic Ramakrishna. <br><br></li>
-
-            <li>He was a key figure in the introduction of Vedanta
-                and Yoga to the Western world and is credited with 
-                raising interfaith awareness, and bringing Hinduism 
-                to the status of a major world religion.<br><br></li>
-
-            <li>Born into an aristocratic Bengali Kayastha family in 
-                Calcutta, Vivekananda was inclined from a young age 
-                towards religion and spirituality. He later found his 
-                guru, Ramakrishna, and became a monk.<br><br></li>  
-                
-            <li> After the death of Ramakrishna, Vivekananda extensively
-                toured the Indian subcontinent, acquiring first-hand 
-                knowledge of the living conditions of Indian people in 
-                then British India. <br><br></li>
-                
-            <li>Moved by their plight, he resolved to help his 
-                countrymen and found a way to travel to the United 
-                States, where he became a popular figure after the 
-                1893 Parliament of Religions in Chicago, in which 
-                he began his famous speech with the words: Sisters 
-                and brothers of America... before introducing 
-                Hinduism to Americans<br><br></li>  
-                
-            <li>He was so impactful at the Parliament that an 
-                American newspaper described him as "an orator 
-                by divine right and undoubtedly the greatest figure 
-                at the Parliament"<br><br></li>  
-                
-            <li>After great success at the Parliament, in the subsequent 
-                years, Vivekananda delivered hundreds of lectures across 
-                the United States, England and Europe, disseminating the 
-                core tenets of Hindu philosophy, and founded the Vedanta 
-                Society of New York and the Vedanta Society of San 
-                Francisco (now Vedanta Society of Northern California),
-                both of which became the foundations for Vedanta 
-                Societies in the West.<br><br></li> 
-                
-            <li>In India, Vivekananda founded the Ramakrishna Math, 
-                which provides spiritual training for monastics and 
-                householder devotees, and the Ramakrishna Mission that 
-                provides charity, social work and education.<br><br></li>    
-
-            <li>Vivekananda was one of the most influential philosophers 
-                and social reformers in his contemporary India, and the 
-                most successful missionaries of Vedanta to the Western world.<br><br></li>
-                
-            <li>He was also a major force in contemporary Hindu reform 
-                movements, and contributed to the concept of nationalism 
-                in colonial India.<br><br></li> 
-                
-            <li>He is now widely regarded as one of the most influential 
-                people of modern India and a patriotic saint. His birthday 
-                in India is celebrated as National Youth Day.<br><br></li>    
-        </ul>
-    </div>
+    <h1 style="text-align: center; font-size: 50px;">Programming Survey Form</h1>
     
-    <div style="margin-top: 20px; text-align: center;"> 
-        <small>For more information about <b>Swami Vivekananda</b>  visit Wikipedia. 
-            Developed by <span style="color: blue;">Abhishek Sharma</span></small>
-    </div>
-   
-   
-   
-    
+    <form action="form" style="text-align: justify; 
+                             background-color:aliceblue; width: fit-content;
+                             margin-left: 350px; padding: 20px 20px 20px 20px; 
+                             font-size: 30px; ">
+        <div>
+            <label for="First Name">First Name:</label> <br>
+            <input type="text" id="First Name" size="40">
+        </div>
+
+        <div>
+            <label for="Last Name">Last Name:</label> <br>
+            <input type="text" id="Last Name" size="40">
+        </div>
+
+        <div>
+            <label for="email">Email id:</label> <br>
+            <input type="email" id="email" placeholder="@gmail.com" size="40">
+        </div>
+
+        <div>
+            <label for="age">Age:</label> <br>
+            <input type="number" id="age" size="30" >
+        </div>
+
+        <label for="description">Which option best describes you:</label> <br>
+        <select name="description" id="description">
+            <option value="Student">Student</option>
+            <option value="Intern">Intern</option>
+            <option value="Professional">Professional</option>
+            <option value="Unemployed">Unemployed</option>
+        </select>
+
+        <div>
+            <label for="recommend">Would you recommend this course to your friend:</label> <br>
+            <input type="radio" id="recommend" name="recommend">Yes  <br>
+            <input type="radio" name="recommend" id="recommend">No    <br>
+            <input type="radio" name="recommend" id="recommend">Maybe  <br>
+        </div>
+
+        <div>
+            <label for="languages">Languages and Framework known:</label> <br>
+            
+            <label for="input 1">
+                <input type="checkbox"> C <br>
+            </label>
+
+            <label for="input 2">
+                <input type="checkbox"> C++ <br>
+            </label>
+
+            <label for="input 3">
+                <input type="checkbox"> Java <br>
+            </label>
+
+            <label for="input 4">
+                <input type="checkbox"> Java Script <br>
+            </label>
+
+            <label for="input 5">
+                <input type="checkbox"> Python <br>
+            </label>
+
+            <label for="input 6">
+                <input type="checkbox"> Node JS <br>
+            </label>
+
+            <label for="input 7">
+                <input type="checkbox"> Angular <br>
+            </label>
+
+            <label for="input 8">
+                <input type="checkbox"> Jquery <br>
+            </label>
+            
+            <label for="input 9">
+                <input type="checkbox"> bootstrap <br>
+            </label>
+
+        </div>
+
+        <div>
+            <label for="textarea">Your views and suggestions</label> <br>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="type here"></textarea>
+        </div>
+
+        <button style="width: 200px;">Submit</button>
+
+    </form>
 </body>
 </html>
